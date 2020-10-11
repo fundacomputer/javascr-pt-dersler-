@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     //var tarih=new Date(0);//saniye artırmak için 0 yerine 1000 ms cinsinden dusunursekk
+     /*var tarih=new Date(1000);
+      document.write(tarih);*/
+
+    /*var tarih=new Date(86400000);
+      document.write(tarih);*/
+      /*var tarih=new Date("March 15,2014,16:06:20");
+      document.write(tarih);*/
+       function saatiGoster(){
+           var tarih=new Date();
+           var saat=tarih.getHours();
+           var dakika=tarih.getMinutes();
+           var saniye=tarih.getSeconds();
+           //document.write(saat+" "+dakika+":"+saniye+"<br>");
+
+         document.body.innerHTML=saat+":"+dakika+":"+saniye+"<br>";
+
+       }
+       setInterval(saatiGoster,1000);
+    
+    </script>
+    
+
+</body>
+</html>

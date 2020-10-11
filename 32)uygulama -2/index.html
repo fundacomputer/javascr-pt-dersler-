@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+</head>
+<body>
+   <form  onsubmit="return validate()">
+        <input name="password"type="password" value="şifrenizi giriniz..">
+        <br>
+        <input name="repasword" type="password" value= "şifrenizi tekrar giriniz..">
+        <br>
+        <input type="submit" value="Kayıt Ol">
+   </form>
+   <script>
+   
+  /* var pass=document.getElementsByName("password");
+   var repass=document.getElementsByName("repassword");
+   if(pass.value==repass.value){
+       return true;
+    }*/ // boyle kabak gibi yazmak yerine function oluşturmak
+         // daha mantıklı...
+function validate(){//validate doğrulama demek
+    
+    var pass=document.getElementsByName("password")[0];
+    var repass=document.getElementsByName("repassword")[0];
+    if(pass.value!=" " && repass.value!=" "){
+    if(pass.value==repass.value){
+        alert("kaydınız tamamlandı");
+           return true;
+
+         }
+}
+        alert("Girilen Şifreler eşleşmedi");
+        return false;
+         }
+        
+   </script>
+</body>
+</html>

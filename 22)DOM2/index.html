@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <div class="baslik">
+   </div>
+
+
+   <div class="baslik">
+
+   </div>
+    <script>
+   // document.getElementById("baslik").innerHTML="<p>kaan academy</p>";
+    
+   /* document.getElementsByClassName("baslik")[0].innerHTML="<p>kaan academy</p>";
+    //div içindeki içeriğe erişmek için bu metodu kullandık.
+    // burdaki  divler arrayler olarak düsünebiliriz.
+    //[0],[1] şeklinde yazma nedenimiz budur...
+    document.getElementsByClassName("baslik")[1].innerHTML="<p>kurs</p>";
+    // burda etiketlere göre yaptık."tag name"
+    document.getElementsByTagName("div")[0].innerHTML="div1";
+    document.getElementsByTagName("div")[1].innerHTML="div2";*/
+
+   var divlerimiz=document.getElementsByTagName("div");
+   for(var i=0; i<divlerimiz.length;i++){
+       divlerimiz[i].innerHTML="div"+i;
+   }
+
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>

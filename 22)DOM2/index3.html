@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+
+
+
+    </header>
+
+ <script>
+     var header=document.getElementsByTagName("header");
+     for(var i=0;i<4;i++){
+         header[0].innerHTML+="<p></p>";
+     }
+  var headerincocuklari=header[0].childNodes;// headerin çocuklarına ulaşmak için  childnodes kullandıkk..
+  for(var i=0;i<headerincocuklari.length;i++){
+      headerincocuklari[i].innerHTML="p"+i;
+      //document.body.innerHTML+=bodynincocukları[i].nodeName+"";
+
+  }
+ 
+ 
+ </script>
+
+</body>
+</html>

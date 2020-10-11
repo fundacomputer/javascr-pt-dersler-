@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+     <div class="bolum1"></div>
+
+     <script>
+      var bolum1cocuk=document.getElementsByClassName("bolum1")[0];
+      if(bolum1cocuk.hasChildNodes()){// hasChildNodes(); metod  çocuk var mı yok mu diye baktık.
+      
+          document.body.innerHTML+="çocuk var";
+      }
+     
+     else{
+         document.body.innerHTML+="çocuk yok";
+     }
+     
+
+     </script>
+</body>
+</html>

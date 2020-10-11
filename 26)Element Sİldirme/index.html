@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+  <ul>
+     <li>Anasayfa</li>
+     <li>Hakkımıza</li>
+     <li>İletişim</li>
+     <li>Vizyonumuz</li>
+     
+
+
+  </ul>
+
+    </nav>
+    <script>
+    var navMenu=document.getElementsByTagName("nav")[0];
+    var sil=navMenu.childNodes[1].childNodes[5];
+    navMenu.childNodes[1].removeChild(sil);
+    // removeChild  silme yapar
+    //chilNodes nav menusundeki ul ulaştık altındaki li ler var...
+    
+    </script>
+
+</body>
+</html>

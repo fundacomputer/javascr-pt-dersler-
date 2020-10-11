@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    img{
+        height:250px;
+    }
+    button{
+        display:block;
+    }
+    </style>
+</head>
+<body>
+    
+    <img id="logo"src="img/coder.jpg" alt="" title="coder">
+    <button onclick=" resmiDegistir()">resmi değiştir</button>
+ <script>
+ 
+ /* var logomuz=document.getElementById("logo");
+  logomuz.src="img/laptop.jpg"*/
+  function resmiDegistir(){
+    var logomuz=document.getElementById("logo");
+     logomuz.title="laptop";
+     logomuz.src="img/laptop.jpg";
+  }
+ 
+ </script>
+</body>
+</html>

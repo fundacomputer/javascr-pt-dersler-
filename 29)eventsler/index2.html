@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+     <style>
+       img{
+           height:250px;
+       }
+       div{
+           border:1px solid red;
+       }
+     </style>
+</head>
+<body>
+   <div id="div1">
+
+     Kaan Academy
+   </div>
+
+
+     <script>
+         var divimiz=document.getElementById("div1");
+         divimiz.onmouseover=function(){
+         divimiz.innerHTML="mouse üzerine geldi";
+
+         }
+         divimiz.onmouseout=function(){
+             divimiz.innerHTML="Kaan Academy";
+         }
+        //onmouseover
+        </script>
+
+
+</body>
+</html>

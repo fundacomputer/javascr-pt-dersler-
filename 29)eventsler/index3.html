@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+     div{
+         border:1px solid red;
+     }
+    
+    </style>
+</head>
+<body>
+    
+<p onclick="saatBasla()">Tarih</p>
+<p></p>
+
+
+
+
+    <script>
+    
+
+    var tarihParagrafi=document.getElementsByTagName("p")[1];
+    
+       function saatBasla(){
+           setInterval(tarihiGoster,1000);
+       }
+       function tarihiGoster(){
+           //tarihParagrafi.innerHTML=Date();
+           var tarih=new Date();
+       tarihParagrafi.innerHTML=terih.getHours()+" "+tarih.getMinutes()+" "+tarih.getSeconds();
+
+       }  
+      
+
+        </script>
+</body>
+</html>

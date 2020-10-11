@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>
+    var isim="kaan";
+    var yas=25;
+    var gozRengi="Mavi";
+
+ var insan1={
+     isim:"kaan",
+     yas:25,
+     gozRengi:"Ela"
+ }; 
+
+/*document.write(isim+" "+yas+" "+gozRengi+"<br>");
+document.write(insan1.isim+" "+insan1.yas+" "+insan1.gozRengi+"<br>");
+
+document.write(insan1["isim"].length);//uzunluğu bulduk..
+length ifadesini stringler içiin kullanabiliriz..
+
+document.write(insan1["isim"]);// ekrana yazmayı iki şekilde yapabiliriz.
+
+
+*/
+function insan(isim,yas,gozRengi){// bütün insanlar için düşündük..
+// javada public yada private olarak düsünebilirizz.. 
+    this.isim=isim;
+    this.yas=yas;
+    this.gozRengi=gozRengi;
+    this.dogumYili=dogumYiliHesapla;
+    this.isimDegisir=isimDegisir;
+    // this.isimDegistir=function(yenisim){
+        //this.isim=yeniIsim;
+    
+        }
+        //this.dogumYili=dogumYiliHesapla;
+    function isimDegisir(yeniİsim){
+        this.isim=yeniIsim;
+}
+function dogumYilihesapla(){
+    return 2019-this.yas;
+}
+var i1=new insan ("ahmet",29,"kahverengi");
+document.write(i1.isim+" "+i1.yas+" "+i1.gozRengi+"<br>");
+ i1.isimDegisir("kaan");//isim değişkeni atadık...
+
+
+document.write(i1.isim+" "+i1.yas+" "+i1.gozRengi+i1.dogumYili());
+
+
+</script>
+</body>
+</html>
